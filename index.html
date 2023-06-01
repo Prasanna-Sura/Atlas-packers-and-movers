@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Packers & Movers</title>
+    <style>
+      .form1 {
+        background-color: #548ea3;
+        color: white;
+        padding: 15px;
+        width: 800px;
+      }
+      .formheading {
+        background-color: #fff;
+        color: #ff1c1c;
+        width: 90%;
+        border-radius: 7px;
+        text-align: center;
+        margin-bottom: 15px;
+        margin: auto;
+      }
+      .table1 {
+        width: 700px;
+        /* text-align: center; */
+        margin: auto;
+        border: 3px solid white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      td {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100px;
+        height: 20px;
+        /* text-align: left;
+        padding: 2px; */
+      }
+      .category {
+        color: #bc1414;
+        text-align: left;
+      }
+      .formbutton {
+        background-color: red;
+        color: #fff;
+        font-weight: 700;
+        margin-left: 5px;
+        margin-top: 40px;
+        font-size: 16px;
+        border-radius: 5px;
+        font-weight: 700;
+      }
+      a {
+        text-decoration-color: none;
+        color: #fff;
+      }
+      .formbutton:hover {
+        background-color: #fff;
+        color: red;
+      }
+      input[type="date"],
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"] {
+        width: 98%;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vw;
+      }
+      .table-wrapper {
+        margin: auto;
+        border-collapse: collapse;
+        border-color: #fff;
+      }
+      #condition:hover {
+        color: #bc1414;
+      }
+
+      /* .form1 {
+        display: inline-block;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <table class="table-wrapper">
+      <tbody>
+        <tr>
+          <td style="border-color: #fff">
+            <img src="./Atlas pic.png" alt="atlas image" />
+          </td>
+          <td style="border-color: #fff">
+            <form action="" class="form1">
+              <h2 class="formheading">Atlas Packers & Movers</h2>
+              <table class="table1">
+                <!-- first row -->
+                <tr>
+                  <td colspan="2">
+                    <a href="#relocation">relocation info</a><br />
+                    <a href="#Personalinfo">Personal info</a><br />
+                    <a href="#Getaquote">Get a quote</a><br />
+                  </td>
+                </tr>
+                <!-- second row -->
+                <tr>
+                  <td colspan="2" class="category" id="relocation">
+                    Relocation Information
+                  </td>
+                </tr>
+                <!-- third row -->
+                <tr>
+                  <td>
+                    <select name="currentcity" id="currentcity" required>
+                      <option value="select your current city">
+                        Select your current city
+                      </option>
+                      <option value="hyderabad">Hyderabad</option>
+                      <option value="mumbai">Mumbai</option>
+                      <option value="bangalore">Bangalore</option>
+                      <option value="chennai">Chennai</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="date" />
+                  </td>
+                </tr>
+                <!-- fourth row :select category -->
+                <tr>
+                  <td>Select Category</td>
+                  <td>
+                    <input type="radio" id="homerelocation" name="relocation" />
+                    <label for="homerelocation">HomeRelocation</label>
+                    <input type="radio" id="factory" name="relocation" />
+                    <label for="factory">Factory/Office Relocation</label>
+                  </td>
+                </tr>
+                <!-- fifth row - Address -->
+                <tr>
+                  <td>
+                    <textarea
+                      placeholder="From Address"
+                      name="faddress"
+                      id="fromaddress"
+                      cols="40"
+                      rows="4"></textarea>
+                  </td>
+                  <td>
+                    <textarea
+                      placeholder="To Address"
+                      name="taddress"
+                      id="toaddress"
+                      cols="45"
+                      rows="4"></textarea>
+                  </td>
+                </tr>
+                <!-- sixth row - Distance -->
+                <tr>
+                  <td>Distance in km(approx)</td>
+                  <td>
+                    <input type="range" value="25" style="width: 85%" />350
+                  </td>
+                </tr>
+                <!-- seventh row - personal info-->
+                <tr>
+                  <td colspan="2" class="category">Personal Information</td>
+                </tr>
+                <!-- eighth row  - customer name-->
+                <tr>
+                  <td>Customer Name</td>
+                  <td>
+                    <input
+                      type="text"
+                      id="cname"
+                      placeholder="Enter the customer name"
+                      name="cname" />
+                  </td>
+                </tr>
+                <!-- ninth row - phone number-->
+                <tr>
+                  <td>Phone Number</td>
+                  <td>
+                    <input
+                      type="tel"
+                      id="number"
+                      name="pnum"
+                      placeholder="Enter the phone number" />
+                  </td>
+                </tr>
+                <!-- tenth row - EMAIL-->
+                <tr>
+                  <td>
+                    <label for="email">Emaild ID</label>
+                  </td>
+                  <td>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter the email Id" />
+                  </td>
+                </tr>
+                <!-- eleventh row - get a quote-->
+                <tr>
+                  <td colspan="2" class="category">Get a qoute!</td>
+                </tr>
+                <!-- twelfth row - possible charges-->
+                <tr>
+                  <td>Possible charges involved</td>
+                  <td>
+                    <input type="checkbox" id="PackingCharges" name="charges" />
+                    <label for="PackingCharges">Packing Charges</label>
+                    <input type="checkbox" id="LoadingCharges" name="charges" />
+                    <label for="LoadingCharges">Loading Charges</label> <br />
+                    <input
+                      type="checkbox"
+                      id="TransportationCharges"
+                      name="charges" />
+                    <label for="TransportationCharges"
+                      >Transportation Charges</label
+                    >
+                    <input
+                      type="checkbox"
+                      id="UnloadingCharges"
+                      name="charges" />
+                    <label for="UnloadingCharges">Unloading Charges</label>
+                    <br />
+                    <input
+                      type="checkbox"
+                      id="UnpackingCharges"
+                      name="charges" />
+                    <label for="UnpackingCharges">Unpacking Charges</label>
+                    <input type="checkbox" id="EscortCharges" name="charges" />
+                    <label for="EscortCharges">Escort Charges</label><br />
+                    <input type="checkbox" id="OctroiCharges" name="charges" />
+                    <label for="OctroiCharges">Octroi Charges</label>
+                  </td>
+                </tr>
+                <!-- thirteenth row - tax -->
+                <tr>
+                  <td colspan="2" id="condition">
+                    **Qoute you receive will include service tax of 12.3%
+                  </td>
+                </tr>
+              </table>
+              <button class="formbutton">GET A QUOTE</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
